@@ -1,5 +1,17 @@
 import React from 'react'
 import CustomButton from './CustomButton'
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+import { Button } from '../ui/button'
+import { Menu } from 'lucide-react'
 
 const Navbar = () => {
   return (
@@ -18,6 +30,26 @@ const Navbar = () => {
             </nav>
 
           <CustomButton text="Log in" link='/login' />
+
+          <Drawer swipeDirection= "right">
+  <DrawerTrigger className="lg:hidden" render={<Button variant="outline" size="icon" />}><Menu /></DrawerTrigger>
+  <DrawerContent>
+    <DrawerHeader>
+      <DrawerTitle className="text-3xl font-bold">Wanderwise</DrawerTitle>
+      <DrawerDescription>click on the links to navigate.</DrawerDescription>
+    </DrawerHeader>
+    <div className="p-4 flex flex-col">
+      <a className='w-full' href="/"><Button variant='secondary' className="w-full h-12 text-lg">Home</Button></a>
+      <a className="w-full" href="/about"><Button variant='secondary' className="w-full h-12 text-lg">About</Button></a>
+      <a className="w-full" href="/contact"><Button variant='secondary' className="w-full h-12 text-lg">Contact</Button></a>
+    </div>
+    <DrawerFooter>
+     <CustomButton text="Log in" link='/login' />
+      <DrawerClose render={<Button variant="outline" />}>Cancel</DrawerClose>
+    </DrawerFooter>
+  </DrawerContent>
+</Drawer>
+
         </div>
 
     </header>
