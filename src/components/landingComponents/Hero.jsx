@@ -15,10 +15,10 @@ const Hero = () => {
                  
               </div>
               {/* content */}
-              <div className='absolute top-0 w-full h-[90vh] flex items-center justify-center '>
-                <div className="w-1/2 mx-auto text-left" >
-                <h1 className='text-4xl font-bold text-white'>Plan your trips with Wanderwise</h1>
-                <p className='text-white mt-4 text-lg'>
+               <div className="w-full md:w-2/3 lg:w-1/2 mx-auto text-center">
+                    <div className="w-full md:w-2/3 lg:w-1/2 mx-auto text-center">
+                    <h1 className='text-3xl lg:text-5xl font-bold text-white'>Plan your trips with Wanderwise</h1>
+                  <p className="text-white mt-6 text-xl leading-5 lg:leading-8 tracking-wider">
                    Wonderwise is an innovative, AI-powered travel planning website that creates personalized, budget-friendly itineraries based on your unique interests and travel habits.If you are mapping out a specific vacation, let me know:Your destination city or country, The number of days you plan to travel, Your estimated travel budget.
 
                 </p>

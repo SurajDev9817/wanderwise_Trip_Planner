@@ -65,8 +65,8 @@ try {
 
   return (
         <div className='w-full h-dvh pt-30 bg-emerald-200 '>
-          <div className='w-1/2 mx-auto bg-white  rounded-lg grid grid-cols-2 h-60dvh'>
-          <div className='w-full overflow-hidden'>
+          <div className='w-full lg:w-1/2 mx-auto bg-white rounded-lg grid grid-cols-1 lg:grid-cols-2 h-60dvh overflow-hidden'>
+                <div className="w-full overflow-hidden hidden lg:block">
             <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="wanderwise login page" />
             </div>
           <div>

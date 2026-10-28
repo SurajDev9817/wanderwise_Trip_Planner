@@ -34,14 +34,14 @@ const Features = () => {
 
     const navigate= useNavigate();
   return (
-    <div className='px-20 py-24 bg-red-400'>
+    <div className='px-4 md:px-8 lg:px-20 py-24'>
         {/* heading */}
         <div>
             <h2 onClick={()=>{navigate("/Features")}} className='text-4xl font-bold text-center'>Features </h2>
         </div>
 
         {/* content  */}
-        <div className='grid grid-cols-4 gap-6 mt-20'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20'>
           {
             featuresData.map((feature, index)=>{
                 return(
