@@ -3,32 +3,41 @@ import CustomButton from '../common/CustomButton'
 
 const Hero = () => {
   return (
-    <div className='relative'>
-        {/* image */}
-        <div className='w-full h-[90vh] overflow-hidden flex items-center '>
-            <img src="/heroImage.jpg" alt="Wanderwise hero section" 
-            className='w-full ' />
-        </div>
-              {/* overlay  */}
-              <div className='w-full h-[90vh] bg-black absolute top-0 opacity-60'>
-                
-                 
-              </div>
-              {/* content */}
-               <div className="w-full md:w-2/3 lg:w-1/2 mx-auto text-center">
-                    <div className="w-full md:w-2/3 lg:w-1/2 mx-auto text-center">
-                    <h1 className='text-3xl lg:text-5xl font-bold text-white'>Plan your trips with Wanderwise</h1>
-                  <p className="text-white mt-6 text-xl leading-5 lg:leading-8 tracking-wider">
-                   Wonderwise is an innovative, AI-powered travel planning website that creates personalized, budget-friendly itineraries based on your unique interests and travel habits.If you are mapping out a specific vacation, let me know:Your destination city or country, The number of days you plan to travel, Your estimated travel budget.
+    <section className="relative isolate flex h-[90vh] min-h-162.5 w-full items-center justify-center overflow-hidden">
 
-                </p>
-                <div className='space-x-5'>
-               <CustomButton text= "Get Started" className='mt-4'  />
-               <CustomButton text=  "Learn More" className='mt-4' />
-               </div>
-                </div>
-              </div>
-    </div>
+      <img
+        src="/heroImage.jpg"
+        alt="Beautiful mountain lake"
+        className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
+      />
+
+      <div className="absolute inset-0 -z-10 bg-black/50" />
+
+      <div className="mx-auto w-full max-w-7xl px-5 py-16 sm:px-8">
+        <div className="mx-auto w-full max-w-4xl text-center">
+
+          <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            Plan Your Trips
+            <span className="mt-2 block text-purple-300">
+              with Wanderwise
+            </span>
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-gray-100 sm:text-lg md:text-xl md:leading-8">
+            Discover your next adventure with Wanderwise, your AI-powered
+            travel planning companion. Create personalized, budget-friendly
+            itineraries tailored to your interests, destination, and travel
+            style.
+          </p>
+
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
+            <CustomButton text="Get Started" className="mt-0" />
+            <CustomButton text="Learn More" className="mt-0" />
+          </div>
+
+        </div>
+      </div>
+    </section>
   )
 }
 
